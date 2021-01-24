@@ -2,9 +2,7 @@
   "name": "svelte-app",
   "version": "1.0.0",
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
-    "start": "sirv public"
+    "start": "http-server -p 5555 -c-1 public"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
@@ -17,6 +15,7 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
+    "http-server": "^0.12.3",
     "sirv-cli": "^1.0.0"
   }
 }
